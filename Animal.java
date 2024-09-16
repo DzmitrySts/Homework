@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String name;
     private static int animalCount = 0;
 
@@ -31,13 +31,9 @@ public class Animal {
         }
     }
 
-    protected int getRunLimit() {
-        return 0;
-    }
+    protected abstract int getRunLimit();
 
-    protected int getSwimLimit() {
-        return 0;
-    }
+    protected abstract int getSwimLimit();
 }
 
 class Dog extends Animal {
